@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lab Test Appointment
+    </title>
+    <link rel="stylesheet" href="Lab_test.css" type="text/css">
+</head>
+<body>
+    <form action=" ">
+        <section>
+            <aside>
+                <img src="Images/Lab-Test/lab-test.jpg" alt="lab-test">
+            </aside>
+            <div id="form_details">
+                <article class="entry">
+                    <h2>
+                        1.Your Contact details
+                    </h2>
+                    <input type="text" name="full name" placeholder="Full Name" title="Name" required>
+                    <input type="number" name="id" placeholder="Patient ID if exists" title="patient">
+                    <br>
+                    <input type="number" name="contact_no" placeholder="Contact Number" min="6000000000" max="9999999999" required >
+                    <input type="email" name="Email" placeholder="Enter Email Id" >
+
+                </article>
+                <article class="entry">
+                    <h2>
+                        2. Address
+                    </h2>
+                    <input type="number" name="house-no" placeholder="H-No" title="House No" required >
+                    <input type="text" name="street name" placeholder="Street Name" title="Street Name" required >
+                    <br>
+                    <input type="text" name="area" placeholder="Area" titel="Area" required> 
+                    <br>
+                    <h3>
+                        District
+                    </h3>
+                    <select name="District">
+                        <option value="Choose">
+                            Choose
+                        </option>
+                        <option value="Banglore">
+                            Bangalore
+                        </option>
+                        <option value="Chennai">
+                            Chennai</option>
+                        <option value="Delhi">Delhi
+
+                        </option>
+                        <option value="Hyderabad">
+                            Hyderabad
+                        </option>
+                        <option value="Kochi">
+                            Kochi
+                        </option>
+                    </select>
+                </article>
+                <article>
+                    <h2>
+                        3. Choose the Test type
+                    </h2>
+                    <p>
+                        Check atleast one box without fail
+                    
+                    </p>
+                    <input type="checkbox" id="c1" name="option1" value="CBC">
+                    <label for="c1">
+                        CBC
+                    </label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                    <label for="c2">
+                        Complete Urine
+                    </label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                    <label for="c3">
+                        Lipid Profile
+                    </label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option4" value="TSH" >
+                    <label for="c4">
+                        Thyroid Stimulating Hormone(TSH)
+                    </label>
+                    <br>
+                    <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+                    <label for="c5">
+                        Glucose Test
+                    </label>
+                </article>
+
+                <article>
+                    <h2>
+                        4. Do you want a hard copy of the report also?
+                    </h2>
+                    <input type="radio" id="c6" name="option" value="True" required>
+                    <label for="c6">
+                        Yes
+                    </label>
+                    <br>
+                    <input type="radio" id="c7" name="option" value="False">
+                    <label for="c7">
+                        No
+                    </label>
+                </article>
+                <article>
+                    <h2>
+                        5. Select Your Comfortable Date and Time
+                    </h2>
+                    <label for="date">
+                        Date:
+                    </label>
+                    <input type="date" id="date" name="date">
+                    <br>
+                    <label for="time">
+                        Time:
+                    </label>
+                     <input type="time" id="time" name="time">
+                </article>
+            </div>
+        </section>
+        <br>
+        <br>
+        <div id="buttons">
+            <button type="Reset">Reset</button>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
